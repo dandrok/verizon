@@ -159,3 +159,230 @@ header {
     }
   }
 }
+
+main {
+  #title-up {
+    margin: 0 auto;
+    max-width: 1440px;
+
+    .title {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: {
+        top: 32px;
+      }
+      h2 {
+        font-size: 4rem;
+        line-height: 54px;
+        font-weight: $bold700;
+      }
+    }
+    .choose {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      margin: {
+        top: 32px;
+        bottom: 32px;
+      }
+      select {
+        max-width: 300px;
+      }
+      form {
+        display: flex;
+        flex-direction: row;
+        border: solid 1px $colorBlack;
+        padding: 2px;
+        width: 300px;
+        border-radius: 3px;
+        input {
+          flex-grow: 2;
+          border: none;
+          &:focus {
+            outline: none;
+          }
+        }
+        button {
+          border: none;
+          border-radius: 2px;
+          background: none;
+          color: $colorBlack;
+          img {
+            height: 20px;
+            width: 32px;
+            display: flex;
+            align-items: center;
+          }
+        }
+      }
+    }
+  }
+  #event-list {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    margin: 0 auto;
+    max-width: 1440px;
+    grid-gap: 24px 16px;
+    grid-auto-flow: row;
+    .box-event {
+      padding: 10px;
+      border-top: 6px solid $colorBlack;
+      background-color: $colorGray;
+      .top-tittle {
+        border-bottom: 1px solid $colorBlack;
+        h3 {
+          font-size: 1.75rem;
+          width: 200px;
+          padding: {
+            bottom: 24px;
+          }
+        }
+      }
+      .time-event {
+        padding: {
+          top: 16px;
+          bottom: 16px;
+        }
+        .weight-medium {
+          font-weight: $regular400;
+        }
+      }
+      p {
+        font-size: 1.25rem;
+        font-weight: $semi600;
+        line-height: 24px;
+      }
+      button {
+        margin: {
+          top: 64px;
+          bottom: 16px;
+        }
+      }
+    }
+  }
+  #view-more {
+    margin: 0 auto;
+    max-width: 1440px;
+    text-align: center;
+    font-weight: $semi600;
+    padding: {
+      top: 64px;
+      bottom: 64px;
+    }
+  }
+  #past-events {
+    margin: 0 auto;
+    max-width: 1440px;
+
+    background-color: $colorBlack;
+    color: $colorWhite;
+    .first-past {
+      padding: 10px;
+      .title {
+        h2 {
+          font-size: 4rem;
+          line-height: 54px;
+          font-weight: $bold700;
+        }
+      }
+      .box-past {
+        display: flex;
+        justify-content: space-between;
+        border-top: 1px solid $colorWhite;
+        margin: {
+          top: 24px;
+          bottom: 32px;
+        }
+        .left {
+          h3 {
+            font-size: 1.75rem;
+            margin: {
+              top: 12px;
+              bottom: 12px;
+            }
+          }
+          h5 {
+            font-weight: $regular400;
+            font-size: 0.75rem;
+          }
+        }
+        .right {
+          padding: {
+            top: 12px;
+          }
+        }
+      }
+      .box-last {
+        padding-bottom: 32px;
+      }
+    }
+    .image-footer {
+      background-image: url(./images/fotter_rdy.jpg);
+      height: 450px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+    }
+  }
+}
+
+footer {
+  background-color: $colorBlack;
+  color: $colorWhite;
+  #footer-top {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    max-width: 1440px;
+    margin: 0 auto;
+    div {
+      border-right: 1px solid rgba(253, 253, 253, 0.2);
+      padding: 10px;
+      height: 200px;
+      display: flex;
+      flex-direction: column;
+      p {
+        font-size: 1rem;
+        font-weight: $bold700;
+        margin-bottom: 10px;
+        border-bottom: solid 2px $colorGray;
+      }
+      a {
+        color: $colorWhite;
+        font-weight: $regular400;
+        font-size: 1rem;
+        &:hover {
+          text-decoration: underline;
+          color: $colorWhite;
+        }
+      }
+    }
+  }
+  #footer-under {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin: 0 auto;
+    max-width: 1440px;
+    align-items: center;
+    .lo {
+      margin-left: 10px;
+      .logo {
+        font-size: 3rem;
+        font-weight: $bold700;
+        letter-spacing: 0.1px;
+        span {
+          color: $colorRed;
+        }
+      }
+    }
+    .pr {
+      display: flex;
+      margin: {
+        left: 10px;
+        right: 10px;
+      }
+      justify-content: space-between;
+      p {
+      }
+    }
+  }
+}
