@@ -1,0 +1,161 @@
+//define variables:
+$colorWhite: rgb(252, 252, 252);
+$colorBlack: rgb(10, 10, 10);
+$colorGray: rgb(246, 246, 246);
+$colorRed: rgb(202, 0, 1);
+
+$radius: 20px;
+
+$regular400: 400;
+$semi600: 600;
+$bold700: 700;
+
+//Changing The Default Settings..
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+
+  // Changing the body here
+
+  body {
+    // width: 100%;
+    // min-height: 100vh;
+    font-family: "Rajdhani", sans-serif;
+    font-size: 100%;
+  }
+  a {
+    text-decoration: none;
+  }
+}
+
+.btn-black {
+  border: 2px solid $colorBlack;
+  border-radius: $radius;
+  background-color: transparent;
+  font-weight: $semi600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: $colorBlack;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+    left: 32px;
+    right: 32px;
+  }
+  &:hover {
+    color: $colorWhite;
+    background-color: $colorBlack;
+  }
+}
+
+.btn-white {
+  border: 2px solid $colorWhite;
+  border-radius: $radius;
+  background-color: transparent;
+  font-weight: $semi600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: $colorWhite;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+    left: 32px;
+    right: 32px;
+  }
+  &:hover {
+    color: $colorBlack;
+    background-color: $colorWhite;
+  }
+}
+
+header {
+  #navbar {
+    border-bottom: 2px solid $colorGray;
+
+    background-color: $colorWhite;
+    .nav-top {
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0 auto;
+      padding: {
+        top: 16px;
+        bottom: 32px;
+      }
+      max-width: 1440px;
+
+      .links-right {
+        margin: {
+          right: 5vw;
+        }
+        a {
+          color: $colorBlack;
+          font-weight: $semi600;
+          font-size: 1rem;
+          padding: {
+            right: 10px;
+          }
+          &:hover {
+            text-decoration: underline;
+            color: $colorBlack;
+          }
+        }
+      }
+      .logo {
+        font-size: 3rem;
+        font-weight: $bold700;
+        letter-spacing: 0.1px;
+        span {
+          color: $colorRed;
+        }
+      }
+    }
+  }
+  #hero {
+    .hero-img {
+      max-width: 1440px;
+      background-image: url(./images/hero_rly.jpg);
+      height: 500px;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+
+      margin: 0 auto;
+
+      padding: 20px 15px;
+      color: $colorWhite;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+
+      .inside-hero {
+        h1 {
+          font-size: 6rem;
+          line-height: 80px;
+          margin-bottom: 32px;
+        }
+        p {
+          margin-bottom: 32px;
+          width: 240px;
+          line-height: 16px;
+          font-size: 1.25rem;
+        }
+        button {
+          margin-bottom: 32px;
+        }
+        h2 {
+          letter-spacing: 0.1px;
+          word-spacing: 0.1px;
+          line-height: 32px;
+          font-size: 3rem;
+          font-weight: $bold700;
+          margin-top: 32px;
+          span {
+            color: $colorRed;
+          }
+        }
+      }
+    }
+  }
+}

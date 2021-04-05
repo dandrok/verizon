@@ -1,0 +1,148 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+* body {
+  font-family: "Rajdhani", sans-serif;
+  font-size: 100%;
+}
+
+* a {
+  text-decoration: none;
+}
+
+.btn-black {
+  border: 2px solid #0a0a0a;
+  border-radius: 20px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #0a0a0a;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.btn-black:hover {
+  color: #fcfcfc;
+  background-color: #0a0a0a;
+}
+
+.btn-white {
+  border: 2px solid #fcfcfc;
+  border-radius: 20px;
+  background-color: transparent;
+  font-weight: 600;
+  font-size: 0.8rem;
+  cursor: pointer;
+  color: #fcfcfc;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 32px;
+  padding-right: 32px;
+}
+
+.btn-white:hover {
+  color: #0a0a0a;
+  background-color: #fcfcfc;
+}
+
+header #navbar {
+  border-bottom: 2px solid #f6f6f6;
+  background-color: #fcfcfc;
+}
+
+header #navbar .nav-top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 auto;
+  padding-top: 16px;
+  padding-bottom: 32px;
+  max-width: 1440px;
+}
+
+header #navbar .nav-top .links-right {
+  margin-right: 5vw;
+}
+
+header #navbar .nav-top .links-right a {
+  color: #0a0a0a;
+  font-weight: 600;
+  font-size: 1rem;
+  padding-right: 10px;
+}
+
+header #navbar .nav-top .links-right a:hover {
+  text-decoration: underline;
+  color: #0a0a0a;
+}
+
+header #navbar .nav-top .logo {
+  font-size: 3rem;
+  font-weight: 700;
+  letter-spacing: 0.1px;
+}
+
+header #navbar .nav-top .logo span {
+  color: #ca0001;
+}
+
+header #hero .hero-img {
+  max-width: 1440px;
+  background-image: url(./images/hero_rly.jpg);
+  height: 500px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  padding: 20px 15px;
+  color: #fcfcfc;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+}
+
+header #hero .hero-img .inside-hero h1 {
+  font-size: 6rem;
+  line-height: 80px;
+  margin-bottom: 32px;
+}
+
+header #hero .hero-img .inside-hero p {
+  margin-bottom: 32px;
+  width: 240px;
+  line-height: 16px;
+  font-size: 1.25rem;
+}
+
+header #hero .hero-img .inside-hero button {
+  margin-bottom: 32px;
+}
+
+header #hero .hero-img .inside-hero h2 {
+  letter-spacing: 0.1px;
+  word-spacing: 0.1px;
+  line-height: 32px;
+  font-size: 3rem;
+  font-weight: 700;
+  margin-top: 32px;
+}
+
+header #hero .hero-img .inside-hero h2 span {
+  color: #ca0001;
+}
+/*# sourceMappingURL=style.css.map */
